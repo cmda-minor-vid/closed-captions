@@ -43,6 +43,12 @@ function updateTimerDisplay(){
 	// (paragraph number, start time, end time, current time)
 
 	//Officer K D 6 - 3 . 7. Let’s begin. Ready?
+	var i = 0;
+	while( i < captions.length) {
+		pTimes(i,captions[i][0],captions[i][1],t);
+		i++;
+	}
+	/* console.log(captions.length);
 	pTimes(0,3.8,8.1,t);
 	pTimes(1,8.1,10,t);
 	pTimes(2,10.8,12.5,t);
@@ -107,7 +113,7 @@ function updateTimerDisplay(){
 	pTimes(44,77.1,78.7,t);
 	pTimes(45,80,81.738,t);
 	pTimes(46,82.2,84.3,t);
-	pTimes(47,85.4,87,t);
+	pTimes(47,85.4,87,t); */
 
 
 	if ( t < 136.1) {
@@ -180,3 +186,4 @@ function pTimes(num,startT,endT,curT) {
 		};
 	}
 })();
+
